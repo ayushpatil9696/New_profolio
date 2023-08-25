@@ -1,69 +1,72 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #cccccc 21.43%, /* Grey color */
+    #888888 50.63%, /* Grey color */
+    #333333 100%, /* Dark grey color */
+    #444444 117.04% /* Darker grey color */
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(204, 204, 204, 0.51);
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #444444 21.43%, /* Darker grey color */
+    #333333 50.63%, /* Dark grey color */
+    #888888 100%, /* Grey color */
+    #cccccc 117.04% /* Grey color */
+  );
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #444444 21.43%, /* Darker grey color */
+    #333333 50.63%, /* Dark grey color */
+    #888888 100%, /* Grey color */
+    #cccccc 117.04% /* Grey color */
+  );
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-gray-900; /* Grey text color */
   }
-  a:hover {
-    color: #747bff;
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
-  button {
-    background-color: #f9f9f9;
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
-} */
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-gray-600 to-gray-800 font-bold font-primary hover:from-gray-800 hover:to-gray-600; /* Grey gradient for text */
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
