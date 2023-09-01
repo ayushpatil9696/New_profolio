@@ -14,7 +14,7 @@ const Banner = () => {
       id="home"
     >
       <div className="container relative mx-auto">
-        <div className="grid absolute top-[-200px] left-0 grid-cols-1 lg:grid-cols-2 gap-8 ">
+        <div className="grid absolute top-[-300px] lg:top-[-200px] left-0 grid-cols-1 lg:grid-cols-2   ">
           {/* Left Side */}
           <div className="text-center font-secondary lg:text-left">
             <motion.h1
@@ -51,7 +51,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0 text-white text-[40px] text-base"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+              I'm a front-end developer with lots of interest in Data strutures.
             </motion.p>
 
             <motion.div
@@ -61,10 +61,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
+              {/* <button className="btn btn-lg">Contact me</button>
               <a href="/" className="text-gradient btn-link pl-4">
                 My portfolio
-              </a>
+              </a> */}
             </motion.div>
 
             {/* Socials */}
@@ -76,21 +76,19 @@ const Banner = () => {
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               <a href="/" className="text-blue-400">
-                <FaGithub size={50}/>
+                <FaGithub size={30} />
               </a>
               <a href="/" className="text-blue-400">
-                <FaLinkedin size={50}/>
+                <FaLinkedin size={30} />
               </a>
               <a href="/" className="text-blue-400">
-                <FaInstagram size={50}/>
+                <FaInstagram size={30} />
               </a>
             </motion.div>
           </div>
 
           {/* Right Side */}
-          <div>
-            <EarthCanvas />
-          </div>
+          <EarthCanvas />
         </div>
       </div>
     </section>

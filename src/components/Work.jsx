@@ -1,12 +1,7 @@
 import React from "react";
-// motion
 import { motion } from "framer-motion";
-// variants
 import { fadeIn } from "../variants";
-//img
 import img1 from "../assets/portfolio-img1.png";
-import img2 from "../assets/portfolio-img2.png";
-import img3 from "../assets/portfolio-img3.png";
 
 const Work = () => {
   return (
@@ -16,41 +11,41 @@ const Work = () => {
           <motion.section
             className="section"
             id="work"
-            variants={fadeIn("up", 0.2)} // Apply the fadeIn variant to the entire section
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
-            whileHover="show"
+            whileInView={"show"}
             viewport={{ once: false, amount: 0.2 }}
           >
             <div className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
-              {/* text */}
               <div>
                 <h2 className="h2 leading-tight text-accent">
                   My latest <br />
                   work
                 </h2>
-                <p className="max-w-sm mb-16 text-white">
+                <p className="max-w mb-10 text-white">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it.
                 </p>
-                <button className="btn btn-sm">View all project</button>
+                <button className="btn btn-sm">View all projects</button>
               </div>
 
-              {/* image */}
               <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                {/* overlay */}
-                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transtion-all duration-300"></div>
-                {/* img */}
-                <img className="group-hover:scale-125" src={img1} alt="" />
-                {/* pretitle */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 "></div>
+
+                {/* Apply styles to the image and its container */}
+                <div className="relative w-full h-96 overflow-hidden group-hover:scale-125 hover:transition-all duration-300 z-40">
+                  <img
+                    className="w-full h-full object-cover transition-transform"
+                    src={img1}
+                    alt=""
+                  />
+                </div>
+
+                <div className="absolute -bottom-16 left-2 group-hover:-bottom-24 transition-all duration-500 z-50">
                   <div className="text-accent text">UI/Ux design</div>
                 </div>
-                {/* title */}
-                {/* <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                  <span className="text-3xl text-white">project title</span>
-                </div>1 */}
               </div>
             </div>
           </motion.section>
