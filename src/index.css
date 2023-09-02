@@ -6,40 +6,44 @@
 .btn {
   background: linear-gradient(
     92.23deg,
-    #cccccc 21.43%, /* Grey color */
-    #888888 50.63%, /* Grey color */
-    #333333 100%, /* Dark grey color */
-    #444444 117.04% /* Darker grey color */
+    #87CEEB 21.43%, /* Light Sky Blue */
+    #5F9EA0 50.63%, /* Cadet Blue */
+    #4682B4 100%, /* Steel Blue */
+    #1E90FF 117.04% /* Dodger Blue */
   );
-  box-shadow: 0px 4.42184px 107.23px rgba(204, 204, 204, 0.51);
+  box-shadow: 0px 4.42184px 107.23px rgba(135, 206, 235, 0.51);
+  border-radius: 10px; /* Adjust the radius as needed */
+  padding: 10px 10px;
 }
 
 .btn:hover {
   background: linear-gradient(
     92.23deg,
-    #444444 21.43%, /* Darker grey color */
-    #333333 50.63%, /* Dark grey color */
-    #888888 100%, /* Grey color */
-    #cccccc 117.04% /* Grey color */
+    #1E90FF 21.43%, /* Dodger Blue */
+    #4682B4 50.63%, /* Steel Blue */
+    #5F9EA0 100%, /* Cadet Blue */
+    #87CEEB 117.04% /* Light Sky Blue */
   );
+  border-radius: 10px; /* Adjust the radius as needed */
 }
 
 .gradient,
 .active {
   background: linear-gradient(
     92.23deg,
-    #444444 21.43%, /* Darker grey color */
-    #333333 50.63%, /* Dark grey color */
-    #888888 100%, /* Grey color */
-    #cccccc 117.04% /* Grey color */
+    #1E90FF 21.43%, /* Dodger Blue */
+    #4682B4 50.63%, /* Steel Blue */
+    #5F9EA0 100%, /* Cadet Blue */
+    #87CEEB 117.04% /* Light Sky Blue */
   );
+  border-radius: 10px; /* Adjust the radius as needed */
 }
-
 
 .active {
   color: #fff;
   padding: 1rem;
-  border-radius: 100%;
+  border-radius: 100%; /* For a circular shape */
 }
+
 
 

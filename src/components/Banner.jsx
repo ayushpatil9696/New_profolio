@@ -10,11 +10,11 @@ import EarthCanvas from "../canvas/Earth";
 const Banner = () => {
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      className="min-h-[85vh] lg:min-h-[78vh] flex items-center justify-"
       id="home"
     >
       <div className="container relative mx-auto">
-        <div className="grid absolute top-[-300px] lg:top-[-200px] left-0 grid-cols-1 lg:grid-cols-2   ">
+        <div className="grid absolute top-[-300px] lg:top-[-200px] grid-cols-1 h-[800px] md:h-[70px] lg:h-[150px] lg:grid-cols-2   ">
           {/* Left Side */}
           <div className="text-center font-secondary lg:text-left">
             <motion.h1
@@ -28,7 +28,7 @@ const Banner = () => {
             </motion.h1>
 
             <motion.div
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0.3)}  
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -75,20 +75,22 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="/" className="text-blue-400">
+              <a href="https://github.com/ayushpatil9696/" className="text-blue-400">
                 <FaGithub size={30} />
               </a>
-              <a href="/" className="text-blue-400">
+              <a href="https://www.linkedin.com/in/ayush-patil-a942b4202/" className="text-blue-400">
                 <FaLinkedin size={30} />
               </a>
-              <a href="/" className="text-blue-400">
+              <a href="https://instagram.com/ayush_nope_11?utm_source=qr&igshid=MThlNWY1MzQwNA==" className="text-blue-400">
                 <FaInstagram size={30} />
               </a>
             </motion.div>
           </div>
 
           {/* Right Side */}
-          <EarthCanvas />
+          <div className="h-full ">
+            <EarthCanvas />
+          </div>
         </div>
       </div>
     </section>

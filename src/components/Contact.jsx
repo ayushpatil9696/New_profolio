@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 const Contact = () => {
   return (
     <motion.section
-      className="py-10 lg:section"
+      className="py-10 lg:section my-[100px] "
       id="contact"
       variants={fadeIn("up", 0.08)} // Apply the fadeIn variant to the entire section
       initial="hidden"

@@ -31,10 +31,10 @@ const services = [
 const Services = () => {
   return (
     <section className="section" id="services">
-      <div className="container mx-auto ">
+      <div className="container mx-auto my-[100px] ">
         <div className="flex flex-col lg:flex-row">
           {/* text and images */}
-          
+
           <motion.div
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -54,8 +54,8 @@ const Services = () => {
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.2}}
-            className="flex-1"
+            viewport={{ once: false, amount: 0.2 }}
+            className="flex-1 items-center justify-start"
           >
             {/* services list */}
             {services.map((services, index) => {
@@ -74,12 +74,12 @@ const Services = () => {
                       {description}
                     </p>
                   </div>
-                  <div>
+                  <div className="flex justify-center items-start"> 
                     <a
                       href="/"
-                      className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                      className="group btn w-9 h-9 mb-[42px] flex justify-center items-center"
                     >
-                      <BsArrowUpRight />
+                      <BsArrowUpRight className="arrow-icon transform rotate-0 group-hover:rotate-45 transition-transform duration-300 ease-in-out" />
                     </a>
                     <a href="/" className="text-gradient text-sm">
                       {link}
