@@ -16,14 +16,13 @@ const About = () => {
   });
   return (
     <section className="section mt-[200px]" id="about" ref={ref}>
-      <div className="container mx-auto">
+      <div className="container mx-auto w-screen  ">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center ld:gap-x-20 lg:gap-y-0 h-screen">
           {/* image */}
           <motion.div
             variants={fadeIn("right", 0.2)}
             initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            animate="show"
             className="flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
           >
             {/* <AstronautCanvas/> */}

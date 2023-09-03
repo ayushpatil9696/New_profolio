@@ -5,14 +5,14 @@ import { fadeIn } from "../variants";
 const Contact = () => {
   return (
     <motion.section
-      className="py-10 lg:section my-[100px] "
+      className="section"
       id="contact"
       variants={fadeIn("up", 0.08)} // Apply the fadeIn variant to the entire section
       initial="hidden"
       whileHover={"show"}
       viewport={{ once: false, amount: 0.2 }}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto my-[200px]">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div
@@ -40,14 +40,14 @@ const Contact = () => {
                 placeholder="Your name"
               />
 
-              <input
+              <input  
                 className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all"
                 type="text"
                 placeholder="Your email"
               />
 
               <textarea
-                className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
+                className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all  mb-12"
                 // type="text"
                 placeholder="Your message"
               ></textarea>

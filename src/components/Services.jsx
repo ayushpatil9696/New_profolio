@@ -31,7 +31,7 @@ const services = [
 const Services = () => {
   return (
     <section className="section" id="services">
-      <div className="container mx-auto my-[100px] ">
+      <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text and images */}
 
@@ -55,7 +55,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.2 }}
-            className="flex-1 items-center justify-start"
+            className="flex-1 items-center justify-center"
           >
             {/* services list */}
             {services.map((services, index) => {
@@ -63,7 +63,7 @@ const Services = () => {
               const { name, description, link } = services;
               return (
                 <div
-                  className="border-b border-white/20 h-[146px] mb-[38px] flex text-white"
+                  className="border-b border-white/20 h-[200px] lg:h-[150px] mb-[5px] flex text-white text-sm"
                   key={index}
                 >
                   <div className="max-w-[476px]">
@@ -74,14 +74,17 @@ const Services = () => {
                       {description}
                     </p>
                   </div>
-                  <div className="flex justify-center items-start"> 
+                  <div className="flex justify-center gay-y-20 items-center">
                     <a
                       href="/"
-                      className="group btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                      className="group btn w-9 h-9  flex justify-center items-center"
                     >
                       <BsArrowUpRight className="arrow-icon transform rotate-0 group-hover:rotate-45 transition-transform duration-300 ease-in-out" />
                     </a>
-                    <a href="/" className="text-gradient text-sm">
+                    <a
+                      href="/"
+                      className="text-gradient hover:text-blue-300 text-sm flex justify-center items-center"
+                    >
                       {link}
                     </a>
                   </div>
