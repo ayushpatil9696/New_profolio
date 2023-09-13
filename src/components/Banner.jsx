@@ -10,11 +10,11 @@ import EarthCanvas from "../canvas/Earth";
 const Banner = () => {
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center justify-"
+      className=" flex items-center lg:pt-[200px]"
       id="home"
     >
       <div className="container relative mx-auto">
-        <div className="grid absolute top-[-300px] lg:top-[-200px] grid-cols-1 h-[800px] md:h-[70px] lg:h-[150px] lg:grid-cols-2   ">
+        <div className="grid absolute  grid-cols-1  lg:grid-cols-2   ">
           {/* Left Side */}
           <div className="text-center font-secondary lg:text-left">
             <motion.h1

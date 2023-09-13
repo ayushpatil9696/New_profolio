@@ -8,15 +8,13 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 
-import AstronautCanvas from "../canvas/Astronaut";
-
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
   return (
-    <section className="section mt-[200px]" id="about" ref={ref}>
-      <div className="container mx-auto w-screen  ">
+    <section className="section " id="about" ref={ref}>
+      <div className="container mx-auto w-screen lg:pt-[500px] ">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center ld:gap-x-20 lg:gap-y-0 h-screen">
           {/* image */}
           <motion.div
@@ -24,6 +22,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             className="flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
+            viewport={{ once: true}}
           >
             {/* <AstronautCanvas/> */}
           </motion.div>
@@ -32,19 +31,20 @@ const About = () => {
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true}}
             className="flex-1"
           >
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3 mb-4 text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
+              Motivated web developer with React and Next.js internship
+              experience. Proficient in dynamic, responsive web app creation and
+              modern web tech. Proven adaptability, teamwork, and
+              problem-solving skills.
             </h3>
             <p className="mb-6 text-white">
-              Lorem Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s,
+              Eager to contribute expertise to collaborative projects and grow
+              in software development. Seeking skill enhancement and impact in
+              the field.
             </p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">

@@ -11,7 +11,7 @@ import StarsCanvas from "./canvas/Stars";
 
 const App = () => {
   return (
-    <div className="bg-black h-auto w-full z-[-5] ">
+    <div className="bg-black h-auto w-full z-[-5] overflow-x-hidden ">
       <div className="fixed top-0 w-full h-full z-0">
         <StarsCanvas />
       </div>

@@ -5,14 +5,14 @@ import { fadeIn } from "../variants";
 const Contact = () => {
   return (
     <motion.section
-      className="section"
+      className="section pb:[100px] pt:[100px] lg:pb-[200px] lg:pt-[200px] "
       id="contact"
       variants={fadeIn("up", 0.08)} // Apply the fadeIn variant to the entire section
       initial="hidden"
       whileHover={"show"}
       viewport={{ once: false, amount: 0.2 }}
     >
-      <div className="container mx-auto my-[200px]">
+      <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div
