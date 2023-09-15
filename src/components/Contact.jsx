@@ -9,8 +9,8 @@ const Contact = () => {
       id="contact"
       variants={fadeIn("up", 0.08)} // Apply the fadeIn variant to the entire section
       initial="hidden"
-      whileHover={"show"}
-      viewport={{ once: false, amount: 0.2 }}
+      animate="show"
+      viewport={{ once: true}}
     >
       <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row">
@@ -18,6 +18,7 @@ const Contact = () => {
           <motion.div
             className="flex-1 flex justify-start items-center"
             variants={fadeIn("left", 0.2)} // Apply the fadeIn variant to this div
+            viewport={{ once: true }}
           >
             <div>
               <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">
@@ -32,6 +33,7 @@ const Contact = () => {
           <motion.form
             className="flex-1 border rounded-2xl flex-col gap-y-6 pb-24 p-6 items-start"
             variants={fadeIn("right", 0.2)} // Apply the fadeIn variant to this form
+            viewport={{ once: true }}
           >
             <div className="flex-1 border rounded-2xl flex-col gap-y-6 pb-24 p-6 items-start">
               <input

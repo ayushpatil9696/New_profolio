@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 
+import Ayush_DP from "../../src/assets/Ayush_DP.jpg";
+
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -22,16 +24,20 @@ const About = () => {
             initial="hidden"
             animate="show"
             className="flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
-            viewport={{ once: true}}
+            viewport={{ once: true }}
           >
-            {/* <AstronautCanvas/> */}
+            <img
+                    className="w-full h-full p-20 object-cover transition-transform"
+                    src={Ayush_DP}
+                    alt=""
+                  />
           </motion.div>
           {/* text */}
           <motion.div
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true}}
+            viewport={{ once: true }}
             className="flex-1"
           >
             <h2 className="h2 text-accent">About me.</h2>
@@ -49,33 +55,12 @@ const About = () => {
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px] text-white">
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
-
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2 ">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                <div className="text-[40px] font-tertiary text-white text-gradient mb-2 ">
+                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px] text-white">
                   Projects <br />
                   Completed
-                </div>
-              </div>
-
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px] text-white">
-                  Satisfied
-                  <br />
-                  Client
                 </div>
               </div>
             </div>

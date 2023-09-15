@@ -13,8 +13,8 @@ const Work = () => {
             id="work"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.2 }}
+       whileInView={"show"}
+            viewport={{ once: true }}
           >
             <div className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
               <div>

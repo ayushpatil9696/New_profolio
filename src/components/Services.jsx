@@ -9,21 +9,21 @@ import { motion } from "framer-motion";
 //services data
 const services = [
   {
-    name: "Developer",
+    name: "PrintWow",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.  ",
+      "Created a user-friendly interface that allows customers to edit their photos and see how they will look in reality.Integrated the product page with the manufacturing system to enable customers to easily order their photo frames. ",
     link: "Learn more",
   },
   {
-    name: "Gamer",
+    name: "Health Harmony",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.  ",
+      "Designed and developed the Health Harmony platform, a web application for tracking and managing health and fitness goals. Implemented user-friendly dashboards and interactive charts to visualize health progress.    ",
     link: "Learn more",
   },
   {
-    name: "Guitarist",
+    name: "DevMentor",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.  ",
+      "A website that serves as a platform containing top-rated courses and provides interview preparation recommendations. It is an ideal place for beginners to enhance their skills. ",
     link: "Learn more",
   },
 ];
@@ -39,12 +39,12 @@ const Services = () => {
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true }}
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6">What i Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16 text-white">
-              I'm a front-end developer with lots of interest in Data strutures.
+            Creating diverse React projects to power dynamic and interactive front-end web applications.
             </h3>
             <button className="btn btn-sm">See some of my work</button>
           </motion.div>
@@ -54,7 +54,7 @@ const Services = () => {
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true }}
             className="flex-1 items-center justify-center"
           >
             {/* services list */}

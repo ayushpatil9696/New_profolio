@@ -36,7 +36,9 @@ const App = () => {
       <Element name="section5">
         <Contact />
       </Element>
+
     </div>
+  
   );
 };
 
